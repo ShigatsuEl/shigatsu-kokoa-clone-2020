@@ -32,26 +32,37 @@ body {
   border: none;
   padding: 18px 0px;
   font-size: 18px;
+}
+
+#login-form input:not([type="text"]):not([type="submit"]) {
+  margin-bottom: 40px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.5s ease-in-out;
-}
-
-#login-form #login-form__address {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#login-form #login-form__password {
-  margin-bottom: 35px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #login-form input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#login-form #login-form__address:focus {
+#login-form input:focus {
   border-color: var(--yellow);
 }
 
-#login-form #login-form__password:focus {
-  border-color: var(--yellow);
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-form a {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  color: inherit;
 }
