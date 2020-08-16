@@ -13,6 +13,35 @@
   justify-content: space-between;
 }
 
-.nav__list {
+.nav__link {
+  position: relative;
   color: #2f363e;
+}
+
+.nav_notification {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background-color: tomato;
+  border-radius: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 17px;
+  bottom: 17px;
+}
+
+.nav__more {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+  bottom: 30px;
 }
