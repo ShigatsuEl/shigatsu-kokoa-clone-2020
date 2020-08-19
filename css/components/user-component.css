@@ -7,7 +7,8 @@
 }
 
 .user-component,
-.user-component__column:first-child {
+.user-component__column:first-child,
+.user-component__musicbar {
   display: flex;
   align-items: center;
 }
@@ -26,7 +27,7 @@
 
 .user-component__subtitle {
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -48,4 +49,18 @@
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__musicbar {
+  border: 2px solid #33d763;
+  border-radius: 20px;
+  padding-left: 10px;
+  width: 200px;
+  height: 20px;
+  font-size: 15px;
+}
+
+.fa-play-circle {
+  margin-left: 8px;
+  color: #33d763;
 }
