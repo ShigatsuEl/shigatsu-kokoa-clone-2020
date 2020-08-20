@@ -24,3 +24,48 @@
   justify-content: center;
   align-items: center;
 }
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-post__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.open-post__hashtag {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.open-post__members {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.open-post__member-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .devider {
+  margin: 0px 5px;
+  width: 1px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+}
