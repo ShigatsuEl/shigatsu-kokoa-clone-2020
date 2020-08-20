@@ -15,5 +15,12 @@
 }
 
 .find-icons__icon span {
-  margin-top: 15px;
+  margin-top: 20px;
+}
+
+.recommanded-friends {
+  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
