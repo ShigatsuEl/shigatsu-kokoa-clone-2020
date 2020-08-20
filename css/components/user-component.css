@@ -48,7 +48,11 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .user-component__musicbar {
@@ -63,4 +67,9 @@
 .fa-play-circle {
   margin-left: 8px;
   color: #33d763;
+}
+
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }
