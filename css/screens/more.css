@@ -39,3 +39,28 @@
   margin: 0px 5px;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.news-paper {
+  margin-top: 25px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.skip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.skip__circle {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2f363e;
+}
+
+.skip__circle__no-color {
+  background-color: rgba(47, 54, 62, 0.5);
+}
