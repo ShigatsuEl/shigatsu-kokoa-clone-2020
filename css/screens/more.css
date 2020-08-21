@@ -1,0 +1,41 @@
+.shigatsu-pay {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 0px 15px;
+  width: 95%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.shigatsu-pay__left {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 140px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.shigatsu-pay__left h5 {
+  font-size: 20px;
+}
+
+.shigatsu-pay__left .fa-comment,
+.shigatsu-pay__left h5:first-child {
+  margin-right: 5px;
+}
+
+.shigatsu-pay__right {
+  display: flex;
+  align-items: center;
+}
+
+.shigatsu-pay__right :nth-child(2),
+.shigatsu-pay__right :nth-child(4) {
+  margin: 0px 5px;
+  color: rgba(0, 0, 0, 0.3);
+}

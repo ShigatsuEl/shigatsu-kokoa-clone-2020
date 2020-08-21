@@ -8,7 +8,8 @@
 
 .user-component,
 .user-component__column:first-child,
-.user-component__musicbar {
+.user-component__musicbar,
+.user-component__my-info {
   display: flex;
   align-items: center;
 }
@@ -72,4 +73,34 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.user-component__my-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.user-component__my-cone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 60px;
+  height: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.user-component__exclamation {
+  color: red;
+  margin-left: 5px;
+}
+
+.user-component__ice-cream {
+  color: rgb(15, 223, 60);
 }
