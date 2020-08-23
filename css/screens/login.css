@@ -1,3 +1,9 @@
+.index {
+  position: fixed;
+  background-image: url(shigatsu-middle.jpg);
+  background-size: cover;
+}
+
 .welcome-header {
   margin: 90px;
   text-align: center;
@@ -13,6 +19,9 @@
   opacity: 0.7;
 }
 
+#login-form .transparent {
+  background-color: transparent;
+}
 #login-form {
   display: flex;
   flex-direction: column;
@@ -44,6 +53,7 @@
 
 #login-form input[type="submit"] {
   background-color: var(--yellow);
+  opacity: 0.5;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
