@@ -1,4 +1,6 @@
 .index {
+  position: fixed;
+  top: 0;
   background-image: url("shigatsu-middle.jpg");
   background-size: 100vw 100vh;
 }

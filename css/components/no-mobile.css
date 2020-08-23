@@ -20,7 +20,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 645px) and (orientation: portrait) {
   #no-mobile {
     display: none;
   }
