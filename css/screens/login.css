@@ -1,6 +1,6 @@
 .index {
   position: fixed;
-  background-image: url(shigatsu-middle.jpg);
+  background-image: url("shigatsu-middle.jpg");
   background-size: cover;
 }
 
@@ -66,4 +66,31 @@
   text-decoration: none;
   font-size: 13px;
   color: inherit;
+}
+
+@keyframes HideSplashScreen-one {
+  0% {
+    background-position: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 50% 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen__first {
+  background-image: url("shigatsu-first.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: HideSplashScreen-one 2s ease-in-out forwards;
+  animation-delay: 1s;
 }
