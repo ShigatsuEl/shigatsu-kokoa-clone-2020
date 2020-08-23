@@ -1,11 +1,14 @@
 .index {
-  position: fixed;
   background-image: url("shigatsu-middle.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
 }
 
 .welcome-header {
-  margin: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 90px;
+  padding-top: 90px;
   text-align: center;
 }
 

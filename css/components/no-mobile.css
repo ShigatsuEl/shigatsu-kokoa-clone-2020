@@ -20,18 +20,20 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 1024px) {
   #no-mobile {
     display: none;
   }
 
   @keyframes HideSplashScreen-one {
     0% {
-      background-position: 50% 0%;
+      transform: translateZ(-180px);
+      filter: blur(4px);
       opacity: 1;
     }
     100% {
-      background-position: 50% 100%;
+      transform: translateZ(0);
+      filter: blur(0px);
       opacity: 0;
       visibility: hidden;
     }
@@ -49,7 +51,9 @@
     justify-content: center;
     align-items: center;
     font-size: 132px;
-    animation: HideSplashScreen-one 2s ease-in-out forwards;
+    will-change: trasform;
+    animation: HideSplashScreen-one 2s cubic-bezier(0.39, 0.575, 0.565, 1)
+      forwards;
     animation-delay: 1s;
   }
 }

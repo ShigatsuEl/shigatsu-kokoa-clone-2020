@@ -25,7 +25,6 @@
 body {
   color: #2f363e;
   font-family: "Open Sans", sans-serif;
-  height: 180vh;
 }
 
 .main-screen {
@@ -34,6 +33,13 @@ body {
 
 /* If you Change backgorund-image, Use lower CSS */
 .screen {
+  width: 100vw;
+  height: 180vh;
   background-image: url("shigatsu-last.png");
-  background-size: 100% 180vh;
+  background-size: 100vw 180vh;
+}
+
+.index {
+  width: 100vw;
+  height: 100vh;
 }
