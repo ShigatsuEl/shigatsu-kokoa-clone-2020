@@ -19,6 +19,18 @@
   padding: 0px var(--horizontal-space);
 }
 
+@keyframes HideSplashScreen {
+  0% {
+    background-position: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 50% 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 #splash-screen__first {
   background-image: url("shigatsu-first.jpg");
   background-size: cover;
@@ -30,4 +42,6 @@
   justify-content: center;
   align-items: center;
   font-size: 132px;
+  animation: HideSplashScreen 2s ease-in-out forwards;
+  animation-delay: 1.5s;
 }
