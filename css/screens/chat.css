@@ -1,5 +1,5 @@
 .chat-screen {
-  height: 10000vh;
+  height: 500vh;
 }
 
 .chat-screen .status-bar {
@@ -17,11 +17,23 @@
   box-sizing: border-box;
 }
 
+@keyframes FadeIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: FadeIn 1s ease-in-out;
 }
 
 .chat__timestamp {
@@ -55,6 +67,53 @@
   align-items: flex-end;
 }
 
+@keyframes FadeInLeft {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInLeftOne {
+  from {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.message__payload-left {
+  animation: FadeInLeftOne 1s ease-in-out;
+}
+
+@keyframes FadeInRight {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.message__payload-right {
+  animation: FadeInRight 1s ease-in-out;
+}
+
+@keyframes FadeInLeftTwo {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: tomato;
+  }
+}
 .message__bubble {
   background-color: white;
   border-radius: 15px;
@@ -62,6 +121,10 @@
   padding: 8px 13px;
   margin-right: 3px;
   font-size: 18px;
+}
+
+.message__bubble-left {
+  animation: FadeInLeftTwo 3s ease-in-out forwards;
 }
 
 .message__author,
@@ -96,6 +159,7 @@
   align-items: center;
   padding: 5px 25px;
   box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
 }
 
 .reply i {
@@ -113,10 +177,11 @@
 
 .reply input {
   height: 30px;
-  width: 100%;
+  width: 90%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 5px 10px;
+  transition: all 0.5s ease-in-out;
 }
 .reply .reply__column:last-child > i,
 .reply button {
@@ -127,13 +192,14 @@
 
 .reply .reply__column:last-child > i {
   top: 13px;
-  right: 40px;
+  right: 60px;
 }
 
 .reply__column button {
   background-color: #fae300;
   width: 30px;
   height: 30px;
+  right: 20px;
   border: none;
   border-radius: 50%;
 }
@@ -145,4 +211,25 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 60vh;
+  transform: translateX(-13%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
