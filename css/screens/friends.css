@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fafafa;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #friends-display-link i {
@@ -33,6 +34,7 @@
   }
 }
 
+/* If you terminate backgorund-image, Use lower CSS */
 #splash-screen-second {
   background-image: url("shigatsu-middle.jpg");
   background-size: cover;
